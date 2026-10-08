@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Интерактивный калькулятор — кейс № 4</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator">
+    <p class="eyebrow">Учебная практика · Кейс № 4</p>
+    <h1>Калькулятор</h1>
+    <p class="hint">Введите два числа и выберите математическую операцию.</p>
+    <div class="inputs">
+      <label for="number1">Первое число<input id="number1" type="text" inputmode="decimal" placeholder="Например, 12,5" autocomplete="off"></label>
+      <label for="number2">Второе число<input id="number2" type="text" inputmode="decimal" placeholder="Например, 2" autocomplete="off"></label>
+    </div>
+    <div class="operations" aria-label="Математические операции">
+      <button type="button" data-operation="sum">Сумма <span>+</span></button>
+      <button type="button" data-operation="difference">Разность <span>−</span></button>
+      <button type="button" data-operation="product">Произведение <span>×</span></button>
+      <button type="button" data-operation="quotient">Деление <span>÷</span></button>
+    </div>
+    <section class="result-panel" aria-live="polite" aria-atomic="true">
+      <span class="result-label">Результат</span>
+      <output id="result">—</output>
+    </section>
+  </main>
+</body>
+</html>
